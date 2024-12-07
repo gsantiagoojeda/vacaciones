@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.APP_VACACIONES" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_fondo_azul</item>
+        <item name="colorPrimaryVariant">@color/color_fondo_azul</item>
+        <item name="colorOnPrimary">@color/color_fondo_azul</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_700</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Estilo para botones deshabilitados -->
+        <item name="buttonStyle">@style/CustomButtonStyle</item>
+    </style>
+
+    <!-- Estilo personalizado para botones -->
+    <style name="CustomButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/btn_disabled_bg</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="DatePickerTheme" parent="Theme.AppCompat.DayNight.Dialog">
+        <!-- Cambia el color del fondo superior -->
+        <item name="colorAccent">@color/color_fondo_azul</item>
+        <item name="android:textColorPrimary">#000000</item> <!-- Negro para los días -->
+        <item name="android:textColorHint">#000000</item> <!-- Negro para los hints -->
+        <!-- Aseguramos que el fondo de las vistas sea del color adecuado -->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

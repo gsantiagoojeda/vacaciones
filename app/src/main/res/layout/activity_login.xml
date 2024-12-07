@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fondo_gris"
+    android:padding="16dp"
+    tools:context=".login.LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:outlineSpotShadowColor="@android:color/transparent"
+        android:outlineAmbientShadowColor="@android:color/transparent"
+        android:elevation="0dp">
+    <!--android:outlineSpotShadowColor="@android:color/transparent" -->
+    <!-- android:outlineAmbientShadowColor="@android:color/transparent" -->
+
+
+    <TextView
+        android:id="@+id/loginErr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_danger"
+        android:backgroundTint="@color/color_danger"
+        android:gravity="center"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        tools:text="CREDENCIALES INCORRECTAS" />
+</androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+android:backgroundTint="@android:color/transparent"
+android:layout_height="match_parent"
+android:layout_width="0dp"
+android:outlineAmbientShadowColor="@android:color/transparent"
+android:outlineSpotShadowColor="@android:color/transparent"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent">
+
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_height="150dp"
+        android:layout_width="150dp"
+        android:src="@mipmap/ic_login" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="BIENVENIDO"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_width="300dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_height="24dp"
+            android:layout_width="24dp"
+            android:src="@drawable/person_fill" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:text="Usuario:"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:autofillHints="username"
+        android:id="@+id/LoginName"
+        android:importantForAutofill="yes"
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/black"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_width="300dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_height="24dp"
+            android:layout_width="24dp"
+            android:src="@drawable/shield_lock_fill" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:text="Contraseña:"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:autofillHints="password"
+        android:id="@+id/LoginPassw"
+        android:importantForAutofill="yes"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/black"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:background="@drawable/boton_iniciar_sesion"
+        android:id="@+id/btnLogin"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_width="200dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

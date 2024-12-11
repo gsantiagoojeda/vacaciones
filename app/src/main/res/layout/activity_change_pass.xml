@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    tools:context=".login.cp.ChangePassActivity">
+
+    <LinearLayout
+        android:id="@+id/BtnBackContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/BtnBack"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:tint="@color/color_fondo_azul" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/textMessageContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/color_danger"
+        android:outlineAmbientShadowColor="@android:color/transparent"
+        android:outlineSpotShadowColor="@android:color/transparent"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnBackContainer">
+
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_danger"
+            android:gravity="center"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:text="CREDENCIALES INCORRECTAS" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/TvTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="cambio de contraseña"
+        android:textColor="@color/color_fondo_azul"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/BtnBackContainer"
+        app:layout_constraintTop_toBottomOf="@+id/textMessageContainer" />
+
+    <TextView
+        android:id="@+id/TvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Por seguridad actualiza tu contraseña"
+        android:textColor="@color/color_fondo_azul"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/BtnBackContainer"
+        app:layout_constraintTop_toBottomOf="@+id/TvTittle" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/newPassLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:hint="Nueva contraseña"
+        app:layout_constraintStart_toStartOf="@+id/BtnBackContainer"
+        app:layout_constraintTop_toBottomOf="@+id/TvText"
+        app:startIconDrawable="@drawable/shield_lock_fill">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/newPassText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/color_fondo_azul"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirmPassLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:hint="Confirma la  contraseña"
+        app:layout_constraintStart_toStartOf="@+id/BtnBackContainer"
+        app:layout_constraintTop_toBottomOf="@+id/newPassLayout"
+        app:startIconDrawable="@drawable/shield_lock_fill">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmPassText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/color_fondo_azul"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/BtnCpContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPassLayout">
+
+        <Button
+            android:id="@+id/BtnCp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="16dp"
+            android:text="Actualizar contraseña"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

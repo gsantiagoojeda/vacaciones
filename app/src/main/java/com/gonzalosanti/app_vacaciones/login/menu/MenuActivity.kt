@@ -149,7 +149,7 @@ class MenuActivity : AppCompatActivity() {
     }
 
     private fun navigateToBV(){
-        val intent= Intent(this, BvActivity:: class.java)
+        val intent= Intent(this, MenuMCActivity:: class.java)
         startActivity(intent)
         finish()
     }

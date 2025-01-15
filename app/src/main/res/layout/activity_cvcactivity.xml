@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.cv.CVCActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/BtnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:src="@drawable/baseline_arrow_back_24"
+
+                app:tint="@color/color_fondo_azul" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Consultar días de mis colaboradores"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/Table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_fondo_gris"
+            android:padding="16dp">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Nombre"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="@color/color_fondo_azul"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Días Totales"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="@color/color_fondo_azul"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Días Gozados"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="@color/color_fondo_azul"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+
+                    android:text="Dias Especiales"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="@color/color_fondo_azul"
+                    android:textColor="@color/white"/>
+            </TableRow>
+
+        </TableLayout>
+    </HorizontalScrollView>
+
+    </LinearLayout>
+
+</ScrollView>

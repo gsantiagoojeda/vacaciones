@@ -18,59 +18,72 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".login.bv.RBDActivity"
+            android:name=".login.cv.CVCActivity"
             android:exported="false" />
+        <activity
+            android:name=".login.menu.MenuMCActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.bv.RBDActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".login.bv.HBDActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".login.bv.BvActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".login.sv.SEOActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".login.cp.ChangePassActivity"
-            android:exported="false" />
-        <activity
-            android:name=".login.cp.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".login.sv.SVOActivity"
-            android:exported="false" />
-        <activity
-            android:name=".login.bv.bg.BlockGeneralActivity"
-            android:exported="false" />
-        <activity
-            android:name=".login.menu.MenuBVActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".login.avhistory.AVHistoryDetailsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".login.avhistory.AvHistoryActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".login.av.AVDetails"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".login.av.AVActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".login.hv.HVDetails"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".login.hv.HVActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".login.sv.RSVActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".login.sv.SEActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".login.menu.MenuSVActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".login.sv.SVActivity"
             android:exported="false"
